@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <p>Type a value in the Fahrenheit field to converter the value to Celcius</p>
+    <label >Fahrenheit</label>
+    <input type="number"  
+    oninput="aa(this.value)"
+    onchange="name()"
+>
+    <p> Celcius: <span id="inputF"></span></p>
+    <script>
+        function aa(valNum) {
+            valNum=parseFloat(valNum);
+            console.log(valNum);
+            document.getElementById("inputF").innerHTML=(valNum-32)/1.8;
+        }
+    </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+   <p>
+       <label>Fahrenheit</label>
+       <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+              oninput="temperatureConverter(this.value)"
+              onchange="temperatureConverter(this.value)">
+   </p>
+   <p>Celsius: <span id="outputCelsius"></span></p>
+   <script>
+    function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+    }
+ </script> -->
+
+</body>
+</html>
